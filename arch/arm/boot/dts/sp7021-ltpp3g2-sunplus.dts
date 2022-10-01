@@ -279,6 +279,16 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pins_gpio_nobinded>;
 
+	interrupt-parent = <&intc>;
+	interrupts = <120 IRQ_TYPE_LEVEL_HIGH>,
+		     <121 IRQ_TYPE_LEVEL_HIGH>,
+		     <122 IRQ_TYPE_LEVEL_HIGH>,
+		     <123 IRQ_TYPE_LEVEL_HIGH>,
+		     <124 IRQ_TYPE_LEVEL_HIGH>,
+		     <125 IRQ_TYPE_LEVEL_HIGH>,
+		     <126 IRQ_TYPE_LEVEL_HIGH>,
+		     <127 IRQ_TYPE_LEVEL_HIGH>;
+
 	pins_gpio_nobinded: pinmux_gpio_nobinded-pins {
 		sunplus,pins = <
 			SPPCTL_IOPAD(30, SPPCTL_PCTL_G_GPIO, 0, 0)   /* was L2SW_LED_FLASH1 */
